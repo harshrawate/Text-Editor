@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #toolbar {
+    padding: 10px;
+    background: #45e5eb;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #toolbar select, #toolbar button {
+    padding: 5px;
+    width: 110px;
+    border-radius: 10px;
+    border-color: blueviolet;
+    height: 35px;
+  }
+  
+  .canvas {
+    width: 100%;
+    height: 90vh;
+    border: 2px solid #ccc;
+    position: relative;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+  }
+  
+  .text-box {
+    position: absolute;
+    padding: 10px;
+    border: 1px dashed #aaa;
+    cursor: grab;
+    min-width: 100px;
+    resize: both;
+    overflow: hidden;  /* Prevent text overflow */
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px; /* Set a max height for the text box */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  
+  /* Remove the border when the text box is being edited */
+  .text-box:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .text-box.editing {
+    border: none;  /* No border when typing */
+  }
+
+  #addText{
+    background-color: aquamarine;
+    border-radius: 10px;
+    
+  }
+  
+  

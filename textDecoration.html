@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsh</title>
+  <link rel="stylesheet" href="textDecoration.css">
+ 
+</head>
+<body>
+  <div id="toolbar">
+    <button id="addText">
+        Add Text
+    </button>
+    <button id="undoBtn">
+        Undo 
+    </button>
+    <button id="redoBtn">
+        Redo
+    </button>
+    <select id="fontSize">
+
+      <option value="14px">14px</option>
+
+      <option value="18px">18px</option>
+
+      <option value="24px">24px</option>
+
+      <option value="32px">
+        32px
+       </option>
+      
+    </select>
+    <select id="fontStyle">
+      <option value="Arial">Arial</option>
+
+      <option value="Courier New">Courier New</option>
+
+      <option value="Times New Roman">
+        Times New Roman
+      </option>
+    </select>
+
+
+    <select id="textDecoration">
+      <option value="none">None</option>
+
+      <option value="underline">Underline</option>
+
+      <option value="line-through">Line Through</option>
+
+      <option value="italic">Italic</option>
+      
+      <option value="bold">Bold</option>
+
+    </select>
+
+
+    <label for="textColor" >Text Color:</label>
+    <input type="color" id="textColor" value="#000000">
+  
+  </div>
+  <div class="canvas" id="canvas"></div>
+
+  <script src="textDecoration.js"></script>
+</body>
+</html>
